@@ -32,3 +32,49 @@ h1::after {
 	right: 0;
 	top: -10px;
 }
+
+
+
+
+.help {
+	background-color: #F1EFE6;
+	border: 1px solid #D3CDAE;
+	font-size: 0.9em;
+	padding: 10px;
+	position: relative;
+	width: 300px;
+	margin: auto;
+}
+.help::before {
+	border-color: transparent #D3CDAE transparent transparent;
+	border-style: solid;
+	border-width: 14px;
+	content: "";
+	left: -28px;
+	margin-top: -14px;
+	position: absolute;
+	top: 50%;
+}
+
+
+
+.tip::before {  
+	content: "\261E";   /* Simbolo unicode*/
+	margin-right: 10px;
+}
+
+
+blockquote {
+	color: #444;
+	font-style: italic;
+}
+blockquote::before, blockquote::after {
+	color: #000;
+	font-size: 3em;
+}
+blockquote::before {
+	content: "\201C";
+}
+blockquote::after {
+	content: "\201D";
+}
